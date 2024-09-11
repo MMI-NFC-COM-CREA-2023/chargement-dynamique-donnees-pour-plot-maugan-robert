@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <div id="myplot"></div>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,7 +74,7 @@
     </section>
 
 </body>
-<script>
+<script type="module">
 
 import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
 
@@ -82,11 +83,11 @@ import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm"
     console.log(data);
 
     const plot = Plot.plot({
-  marginLeft: 110,
-  title: "Top 10 des nationalités vainqueurs de Grand Chelem",
-  x: { label: "Nb de victoires" },
-  y: { label: "Nationalités" },
-  marks: [
+    marginLeft: 110,
+    title: "Top 10 des nationalités vainqueurs de Grand Chelem",
+    x: { label: "Nb de victoires" },
+    y: { label: "Nationalités" },
+    marks: [
     Plot.barX(
       data,
       Plot.groupY({ x: "count" }, { y: "WINNER_NATIONALITY", tip: true, sort: {y: "x", reverse:true, limit:10} })
