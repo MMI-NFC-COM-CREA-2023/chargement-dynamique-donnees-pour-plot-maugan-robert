@@ -74,6 +74,9 @@
 
 </body>
 <script>
-    
+    const dataResponse = await fetch("./data.json");
+    const data = await dataResponse.json();
+    console.log(data);
+
 </script>
 </html>
