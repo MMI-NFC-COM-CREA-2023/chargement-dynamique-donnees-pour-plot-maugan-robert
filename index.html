@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <div id="myplot"></div>
+   
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -118,8 +118,12 @@
         </figure>
     </section>
 </body>
-<script type="module">
-import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+<script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+<script src="https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6"></script>
+<script >
+//import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+async function faitTout() {
+    
 
     const dataResponse = await fetch("./data.json");
     const data = await dataResponse.json();
@@ -161,8 +165,11 @@ const updatedDataResponse = await fetch("./updatedData.json");
     })
   ]
 })
-
 const updatedDiv = document.querySelector("#graphique2");
 updatedDiv.append(updatedPlot); 
+
+}
+
+faitTout();
 </script>
 </html>
