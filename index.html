@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemple avec ancres et figure</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        nav {
+            margin-bottom: 20px;
+        }
+        nav a {
+            margin-right: 15px;
+            text-decoration: none;
+            color: blue;
+        }
+        section {
+            margin-bottom: 40px;
+        }
+        .custom-div {
+            width: 400px;
+            height: 300px;
+            background-color: lightgray;
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Menu avec ancres -->
+    <nav>
+        <a href="#partie1">Aller à la Partie 1</a>
+        <a href="#partie2">Aller à la Partie 2</a>
+    </nav>
+
+    <!-- Première sous-partie -->
+    <section id="partie1">
+        <h2>Partie 1</h2>
+        <p>
+            Ceci est le contenu textuel de la première partie. Il contient des informations pertinentes sur un sujet intéressant.
+        </p>
+        
+        <!-- Figure avec image et légende -->
+        <figure>
+            <figcaption>Exemple d'image pour la première partie.</figcaption>
+        </figure>
+
+        <!-- Div stylisée -->
+        <div id="graphique1" class="custom-div">
+        </div>
+    </section>
+
+    <!-- Deuxième sous-partie -->
+    <section id="partie2">
+        <h2>Partie 2</h2>
+        <p>
+            Ceci est le contenu textuel de la deuxième partie. D'autres informations sont discutées ici, tout aussi fascinantes.
+        </p>
+
+        <!-- Figure avec image et légende -->
+        <figure>
+            <figcaption>Exemple d'image pour la deuxième partie.</figcaption>
+        </figure>
+
+        <!-- Div stylisée -->
+        <div id="graphique2" class="custom-div">
+        </div>
+    </section>
+
+</body>
+</html>
