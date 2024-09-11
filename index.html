@@ -74,6 +74,9 @@
 
 </body>
 <script>
+
+import * as Plot from "https://cdn.jsdelivr.net/npm/@observablehq/plot@0.6/+esm";
+
     const dataResponse = await fetch("./data.json");
     const data = await dataResponse.json();
     console.log(data);
